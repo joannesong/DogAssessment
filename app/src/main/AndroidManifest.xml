@@ -21,9 +21,10 @@
         <activity android:name=".BreedsActivity" />
         <activity
             android:name=".DogsActivity"
-            android:label="@string/title_activity_dogs"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".PhotoActivity"></activity>
+            android:label="@string/title_activity_dogs" />
+        <activity android:name=".PhotoActivity">
+
+        </activity>
     </application>
 
 </manifest>
