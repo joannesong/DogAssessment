@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">DogAssessment</string>
     <string name="title_activity_dogs">DogsActivity</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="submit">submit</string>
+    <string name="welcome">welcome</string>
+    <string name="terrier">Terrier</string>
+    <string name="poodle">Poodle</string>
+    <string name="retriever">Retriever</string>
+    <string name="spaniel">Spaniel</string>
+    <string name="dog">dog</string>
+    <string name="dogOptionMenu">dogOptionMenu</string>
 </resources>
