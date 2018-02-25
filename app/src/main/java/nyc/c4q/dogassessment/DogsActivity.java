@@ -3,6 +3,7 @@ package nyc.c4q.dogassessment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -40,8 +41,13 @@ public class DogsActivity extends AppCompatActivity {
         breed.setText(dogName);
 
         recyclerView = findViewById(R.id.recycler);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
-        recyclerView.setLayoutManager(gridLayoutManager);
+
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+            recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+        }
+        else {
+            recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 3));
+        }
 
         final DogAPIClient client = new DogAPIClient(recyclerView);
 

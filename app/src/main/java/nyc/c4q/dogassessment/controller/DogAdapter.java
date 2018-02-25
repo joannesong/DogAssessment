@@ -27,6 +27,7 @@ public class DogAdapter extends RecyclerView.Adapter<DogViewHolder> {
     @Override
     public DogViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.dog_itemview, parent, false);
+
         return new DogViewHolder(view);
     }
 
@@ -40,4 +41,6 @@ public class DogAdapter extends RecyclerView.Adapter<DogViewHolder> {
     public int getItemCount() {
         return puppyList.size();
     }
+
+
 }
